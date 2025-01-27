@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "gdsmod",
+  "version": "${version}",
+  "name": "GDSMod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/gdsmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.samuelongithub.gdsmod.client.GdsmodClient"
+    ],
+    "main": [
+      "io.github.samuelongithub.gdsmod.Gdsmod"
+    ]
+  },
+  "mixins": [
+    "gdsmod.mixins.json",
+    {
+      "config": "gdsmod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
