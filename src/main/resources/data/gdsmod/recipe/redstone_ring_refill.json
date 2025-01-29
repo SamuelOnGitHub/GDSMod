@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "gdsmod:redstone_ring"
+        ,
+        "minecraft:redstone"
+
+    ],
+    "result": {
+        "id": "gdsmod:redstone_ring",
+        "count": 1
+    }
+}
