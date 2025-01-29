@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+
+            "gdsmod:d_blaze_ring"
+        ,
+            "minecraft:blaze_powder"
+
+    ],
+    "result": {
+        "id": "gdsmod:blaze_ring",
+        "count": 1
+    }
+}

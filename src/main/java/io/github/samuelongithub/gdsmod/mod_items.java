@@ -40,12 +40,24 @@ public class mod_items {
     public static final Item REDSTONE_RING = register(
             new redstone_ring(new Item.Settings().maxCount(1).maxDamage(5).registryKey(REDSTONE_RING_KEY)), REDSTONE_RING_KEY
     );
+    public static final RegistryKey<Item> BLAZE_RING_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gdsmod.MOD_ID, "blaze_ring"));
+    public static final Item BLAZE_RING = register(
+            new blaze_ring(new Item.Settings().maxCount(1).maxDamage(5).registryKey(BLAZE_RING_KEY)), BLAZE_RING_KEY
+    );
+
     public static final RegistryKey<Item> D_REDSTONE_RING_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gdsmod.MOD_ID, "d_redstone_ring"));
     public static final Item D_REDSTONE_RING = register(new Item(new Item.Settings().maxCount(1).registryKey(D_REDSTONE_RING_KEY)), D_REDSTONE_RING_KEY);
+
+    public static final RegistryKey<Item> D_BLAZE_RING_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gdsmod.MOD_ID, "d_blaze_ring"));
+    public static final Item D_BLAZE_RING = register(new Item(new Item.Settings().maxCount(1).registryKey(D_BLAZE_RING_KEY)), D_BLAZE_RING_KEY);
+
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register((itemGroup) -> itemGroup.add(PURPLE_STONE));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> itemGroup.add(REDSTONE_RING));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> itemGroup.add(BLAZE_RING));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> itemGroup.add(D_REDSTONE_RING));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> itemGroup.add(D_BLAZE_RING));
+
     }
 }

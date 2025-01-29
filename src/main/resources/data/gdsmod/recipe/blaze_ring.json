@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#g#",
+    "gBg",
+    "FgF"
+  ],
+  "key": {
+    "#":      "minecraft:nether_wart"
+    ,
+    "g": "minecraft:gold_ingot"
+    ,
+    "B":
+       "minecraft:blaze_powder"
+    ,
+    "F":
+       "minecraft:fire_charge"
+
+  },
+  "result": {
+    "id": "gdsmod:blaze_ring",
+    "count": 1
+  }
+}

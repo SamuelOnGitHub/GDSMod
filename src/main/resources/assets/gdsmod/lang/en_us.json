@@ -1,5 +1,7 @@
 {
   "item.gdsmod.purple_stone": "purple stone",
   "item.gdsmod.redstone_ring" : "redstone ring",
-  "item.gdsmod.d_redstone_ring" : "depleted redstone ring"
+  "item.gdsmod.d_redstone_ring" : "depleted redstone ring",
+  "item.gdsmod.blaze_ring" : "blaze ring",
+  "item.gdsmod.d_blaze_ring" : "depleted blaze ring"
 }
