@@ -34,6 +34,6 @@ public class redstone_ring extends Item {
     }
 
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.literal("and it was with the aroma of the stone of red that the king ran").formatted(Formatting.GOLD));
+        tooltip.add(Text.literal("Provide for us - Emblem of the Holy War!").formatted(Formatting.GOLD));
     }
 }

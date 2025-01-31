@@ -22,7 +22,7 @@ public class blaze_ring extends Item {
     public ActionResult use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
         if(user.isFireImmune()){
-            user.sendMessage(Text.of("those who fear not the flames cannot feel it's burn"), false);
+            user.sendMessage(Text.of("Those who fear not the flames cannot feel it's burn."), false);
             return super.use(world, user, hand);
         }
         if(itemStack.getDamage() < 4){
@@ -38,6 +38,6 @@ public class blaze_ring extends Item {
     }
 
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.literal("and then they burnt to ash before they knew the power of this aroma").formatted(Formatting.GOLD));
+        tooltip.add(Text.literal("Rise up - Emblem of Binding!").formatted(Formatting.GOLD));
     }
 }
