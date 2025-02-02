@@ -46,6 +46,6 @@ public class torch_placer extends Item {
     }
 
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.literal("Let there be light").formatted(Formatting.GOLD));
+        tooltip.add(Text.literal("Heal us, Emblem of Dawn!").formatted(Formatting.GOLD));
     }
 }
