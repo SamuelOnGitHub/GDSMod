@@ -1,7 +1,7 @@
 {
-  "item.gdsmod.purple_stone": "Purple Stone",
-  "item.gdsmod.redstone_ring" : "Ring of the Holy Knight",
-  "item.gdsmod.d_redstone_ring" : "Disengaged Ring of the Holy Knight",
-  "item.gdsmod.blaze_ring" : "Ring of the Young Lion",
-  "item.gdsmod.d_blaze_ring" : "Disengaged Ring of the Young Lion"
+  "item.gdsmod.purple_stone": "purple stone",
+  "item.gdsmod.redstone_ring" : "redstone ring",
+  "item.gdsmod.d_redstone_ring" : "depleted redstone ring",
+  "item.gdsmod.blaze_ring" : "blaze ring",
+  "item.gdsmod.d_blaze_ring" : "depleted blaze ring"
 }

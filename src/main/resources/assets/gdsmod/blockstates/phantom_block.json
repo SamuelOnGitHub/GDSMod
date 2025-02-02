@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "gdsmod:block/phantom_block"
+    }
+  }
+}

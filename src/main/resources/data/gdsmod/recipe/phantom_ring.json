@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+      "minecraft:phantom_membrane",
+      "gdsmod:empty_ring"
+  ],
+  "result": {
+    "id": "gdsmod:phantom_ring",
+    "count": 1
+  }
+}

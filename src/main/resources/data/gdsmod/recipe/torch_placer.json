@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#D#",
+    " O "
+  ],
+  "key": {
+    "#": "minecraft:torch",
+    "D": "minecraft:daylight_detector",
+    "O": "minecraft:dispenser"
+  },
+  "result": {
+    "id": "gdsmod:torch_placer",
+    "count": 1
+  }
+}
