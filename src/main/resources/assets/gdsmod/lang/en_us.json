@@ -3,5 +3,10 @@
   "item.gdsmod.redstone_ring" : "redstone ring",
   "item.gdsmod.d_redstone_ring" : "depleted redstone ring",
   "item.gdsmod.blaze_ring" : "blaze ring",
-  "item.gdsmod.d_blaze_ring" : "depleted blaze ring"
+  "item.gdsmod.d_blaze_ring" : "depleted blaze ring",
+  "item.gdsmod.combustion_ring" : "combustion ring",
+  "item.gdsmod.d_combustion_ring" : "depleted combustion ring",
+  "item.gdsmod.phantom_ring" : "druid ring",
+  "item.gdsmod.d_phantom_ring" : "depleted druid ring",
+  "item.gdsmod.torch_placer" : "torch placer"
 }

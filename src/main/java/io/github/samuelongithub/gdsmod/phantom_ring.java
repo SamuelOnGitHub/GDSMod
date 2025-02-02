@@ -1,5 +1,6 @@
 package io.github.samuelongithub.gdsmod;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -26,12 +27,12 @@ public class phantom_ring extends Item {
             return ActionResult.PASS;
         }
         ItemStack itemStack = user.getStackInHand(hand);
-        if(itemStack.getDamage() < 4){
+        if(itemStack.getDamage() < 19 ||  user.isCreative()){
             itemStack.damage(1, user);
         }
         else {
             itemStack.setCount(0);
-            user.giveItemStack(new ItemStack(mod_items.EMPTY_RING));
+            user.giveItemStack(new ItemStack(mod_items.D_PHANTOM_RING));
         }
 
         BlockPos pos = user.getBlockPos();
@@ -42,27 +43,11 @@ public class phantom_ring extends Item {
                 BlockPos gridPosition = pos.offset(Direction.Axis.Y, -1).offset(Direction.Axis.X, i).offset(Direction.Axis.Z, j);
 
                 if (world.getBlockState(gridPosition).equals(Blocks.AIR.getDefaultState())) {
-                    world.setBlockState(gridPosition, mod_blocks.PHANTOM_BLOCK.getDefaultState(), 3);
+                    world.setBlockState(gridPosition, Blocks.JUNGLE_LEAVES.getDefaultState(), 3);
                 }
             }
         }
 
-        new Thread(() -> {
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            for (int i = -1; i <= 1; i++) {
-                for (int j = -1; j <= 1; j++) {
-                    BlockPos gridPosition = pos.offset(Direction.Axis.Y, -1).offset(Direction.Axis.X, i).offset(Direction.Axis.Z, j);
-
-                    if (world.getBlockState(gridPosition).equals(mod_blocks.PHANTOM_BLOCK.getDefaultState())) {
-                        world.setBlockState(gridPosition, Blocks.AIR.getDefaultState(), 3);
-                    }
-                }
-            }
-        }).start();
 
         return super.use(world, user, hand);
     }

@@ -25,7 +25,7 @@ public class blaze_ring extends Item {
             user.sendMessage(Text.of("Those who fear not the flames cannot feel it's burn."), false);
             return super.use(world, user, hand);
         }
-        if(itemStack.getDamage() < 4){
+        if(itemStack.getDamage() < 4 ||  user.isCreative()){
             itemStack.damage(1, user);
         }
         else {

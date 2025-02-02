@@ -1,9 +1,23 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-      "minecraft:phantom_membrane",
-      "gdsmod:empty_ring"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#g#",
+    "gVg",
+    "FgF"
   ],
+  "key": {
+    "#" : "minecraft:emerald"
+    ,
+    "g":
+       "minecraft:gold_ingot"
+    ,
+    "V":
+       "minecraft:vine"
+    ,
+    "F":
+       "minecraft:flowering_azalea"
+
+  },
   "result": {
     "id": "gdsmod:phantom_ring",
     "count": 1

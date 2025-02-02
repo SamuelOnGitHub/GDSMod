@@ -20,6 +20,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 import java.util.List;
+import java.util.Vector;
 
 public class combustion_ring extends Item {
     public combustion_ring(Settings settings) {
@@ -30,18 +31,18 @@ public class combustion_ring extends Item {
     public ActionResult use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
 
-        if(itemStack.getDamage() < 4){
-            itemStack.damage(1, user);
-        }
-        else {
+        if( !user.isCreative()){
             itemStack.setCount(0);
-            user.giveItemStack(new ItemStack(mod_items.EMPTY_RING));
+            user.giveItemStack(new ItemStack(mod_items.D_COMBUSTION_RING));
         }
 
         BlockPos blockPos = user.getBlockPos();
+        Direction direction = user.getFacing();
+        blockPos = blockPos.offset(direction, 2);
 
         TntEntity tntEntity = new TntEntity(EntityType.TNT, world);
-        tntEntity.setPosition(blockPos.getX(), blockPos.getY()+1, blockPos.getZ());
+        tntEntity.setPosition(blockPos.toCenterPos());
+
         tntEntity.setFuse(0);
         tntEntity.setNoGravity(true);
         tntEntity.setInvisible(true);

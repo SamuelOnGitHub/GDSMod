@@ -21,7 +21,7 @@ public class redstone_ring extends Item {
     @Override
     public ActionResult use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
-        if(itemStack.getDamage() < 4){
+        if(itemStack.getDamage() < 4 ||  user.isCreative()){
             itemStack.damage(1, user);
         }
         else {

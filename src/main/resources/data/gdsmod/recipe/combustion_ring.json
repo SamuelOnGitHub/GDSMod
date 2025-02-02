@@ -1,10 +1,28 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    "minecraft:gunpowder",
-    "minecraft:redstone",
-    "gdsmod:empty_ring"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#gD",
+    "gGg",
+    "Fg#"
   ],
+  "key": {
+    "#":
+     "minecraft:chain"
+    ,
+    "g":
+     "minecraft:gold_ingot"
+    ,
+    "D":
+     "minecraft:dispenser"
+    ,
+    "G":
+
+     "minecraft:gunpowder"
+    ,
+    "F":
+      "minecraft:flint_and_steel"
+
+  },
   "result": {
     "id": "gdsmod:combustion_ring",
     "count": 1

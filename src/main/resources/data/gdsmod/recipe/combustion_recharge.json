@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+
+     "gdsmod:combustion_ring"
+    ,
+
+
+     "minecraft:gunpowder"
+
+  ],
+  "result": {
+    "id": "gdsmod:combustion_ring",
+    "count": 1
+  }
+}
