@@ -1,12 +1,12 @@
 {
-  "item.gdsmod.purple_stone": "purple stone",
-  "item.gdsmod.redstone_ring" : "redstone ring",
-  "item.gdsmod.d_redstone_ring" : "depleted redstone ring",
-  "item.gdsmod.blaze_ring" : "blaze ring",
-  "item.gdsmod.d_blaze_ring" : "depleted blaze ring",
-  "item.gdsmod.combustion_ring" : "combustion ring",
-  "item.gdsmod.d_combustion_ring" : "depleted combustion ring",
-  "item.gdsmod.phantom_ring" : "druid ring",
-  "item.gdsmod.d_phantom_ring" : "depleted druid ring",
+  "item.gdsmod.purple_stone": "Purple Stone",
+  "item.gdsmod.redstone_ring" : "Ring of the Holy Knight",
+  "item.gdsmod.d_redstone_ring" : "Disengaged Ring of the Holy Knight",
+  "item.gdsmod.blaze_ring" : "Ring of the Young Lion",
+  "item.gdsmod.d_blaze_ring" : "Disengaged Ring of the Young Lion",
+  "item.gdsmod.combustion_ring" : "Ring of the Radiant Hero",
+  "item.gdsmod.d_combustion_ring" : "Disengaged Ring of the Radiant Hero",
+  "item.gdsmod.phantom_ring" : "Ring of the Crux of Fate",
+  "item.gdsmod.d_phantom_ring" : "Disengaged Ring of the Crux of Fate",
   "item.gdsmod.torch_placer" : "torch placer"
 }
