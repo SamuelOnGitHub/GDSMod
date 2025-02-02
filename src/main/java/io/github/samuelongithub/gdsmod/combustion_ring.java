@@ -53,6 +53,6 @@ public class combustion_ring extends Item {
     }
 
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.literal("and thus your foes went KABOOM!").formatted(Formatting.GOLD));
+        tooltip.add(Text.literal("Fight on, Emblem of Radiance!").formatted(Formatting.GOLD));
     }
 }
