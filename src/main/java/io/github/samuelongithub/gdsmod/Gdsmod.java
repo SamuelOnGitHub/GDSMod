@@ -7,5 +7,6 @@ public class Gdsmod implements ModInitializer {
     @Override
     public void onInitialize() {
         mod_items.initialize();
+        mod_blocks.initialize();
     }
 }

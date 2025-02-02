@@ -45,6 +45,19 @@ public class mod_items {
             new blaze_ring(new Item.Settings().maxCount(1).maxDamage(5).registryKey(BLAZE_RING_KEY)), BLAZE_RING_KEY
     );
 
+    public static final RegistryKey<Item> PHANTOM_RING_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gdsmod.MOD_ID, "phantom_ring"));
+    public static final Item PHANTOM_RING = register( new phantom_ring(new Item.Settings().maxCount(1).maxDamage(5).registryKey(PHANTOM_RING_KEY)), PHANTOM_RING_KEY);
+
+    public static final RegistryKey<Item> COMBUSTION_RING_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gdsmod.MOD_ID, "combustion_ring"));
+    public static final Item COMBUSTION_RING = register( new combustion_ring(new Item.Settings().maxCount(1).maxDamage(5).registryKey(COMBUSTION_RING_KEY)), COMBUSTION_RING_KEY);
+
+    public static final RegistryKey<Item> TORCH_PLACER_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gdsmod.MOD_ID, "torch_placer"));
+public static final Item TORCH_PLACER = register( new torch_placer(new Item.Settings().maxCount(1).maxDamage(5).registryKey(TORCH_PLACER_KEY)), TORCH_PLACER_KEY);
+
+
+    public static final RegistryKey<Item> EMPTY_RING_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gdsmod.MOD_ID, "empty_ring"));
+    public static final Item EMPTY_RING = register( new Item(new Item.Settings().maxCount(1).maxDamage(5).registryKey(EMPTY_RING_KEY)), EMPTY_RING_KEY);
+
     public static final RegistryKey<Item> D_REDSTONE_RING_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gdsmod.MOD_ID, "d_redstone_ring"));
     public static final Item D_REDSTONE_RING = register(new Item(new Item.Settings().maxCount(1).registryKey(D_REDSTONE_RING_KEY)), D_REDSTONE_RING_KEY);
 
@@ -58,6 +71,10 @@ public class mod_items {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> itemGroup.add(BLAZE_RING));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> itemGroup.add(D_REDSTONE_RING));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> itemGroup.add(D_BLAZE_RING));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> itemGroup.add(PHANTOM_RING));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> itemGroup.add(COMBUSTION_RING));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((itemGroup) -> itemGroup.add(EMPTY_RING));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register((itemGroup) -> itemGroup.add(TORCH_PLACER));
 
     }
 }
