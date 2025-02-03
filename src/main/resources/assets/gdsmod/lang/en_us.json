@@ -8,5 +8,6 @@
   "item.gdsmod.d_combustion_ring" : "Disengaged Ring of the Radiant Hero",
   "item.gdsmod.phantom_ring" : "Ring of the Crux of Fate",
   "item.gdsmod.d_phantom_ring" : "Disengaged Ring of the Crux of Fate",
-  "item.gdsmod.torch_placer" : "Ring of the Dawn Maiden"
+  "item.gdsmod.torch_placer" : "Ring of the Dawn Maiden",
+  "item.gdsmod.d_torch_placer": "Disengaged Ring of the Dawn Maiden"
 }

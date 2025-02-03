@@ -28,17 +28,19 @@ public class torch_placer extends Item {
         BlockPos pos = user.getBlockPos();
 
         if (world.getLightLevel(pos) <= 3) {
-            if (user.getInventory().contains(new ItemStack(Items.TORCH))){
-                int torchSlotNumber = user.getInventory().getSlotWithStack(new ItemStack(Items.TORCH));
-                ItemStack torchStack = user.getInventory().getStack(torchSlotNumber);
 
-                world.setBlockState(pos, Blocks.TORCH.getDefaultState());
+            if (!world.setBlockState(pos, Blocks.TORCH.getDefaultState())){
+                return ActionResult.FAIL;
+            }
 
-                if (!user.isCreative())
-                {
-                    torchStack.decrement(1);
-                    user.getInventory().setStack(torchSlotNumber, torchStack);
-                }
+            ItemStack itemStack = user.getStackInHand(hand);
+            if(itemStack.getDamage() < 107 ||  user.isCreative()){
+                itemStack.damage(1, user);
+
+            }
+            else {
+                itemStack.setCount(0);
+                user.giveItemStack(new ItemStack(mod_items.D_TORCH_PLACER));
             }
         }
 

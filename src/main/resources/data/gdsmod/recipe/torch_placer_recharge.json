@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:coal_block",
+    "minecraft:coal_block",
+    "minecraft:coal_block",
+    "gdsmod:torch_placer"
+  ],
+  "result": {
+    "id": "gdsmod:torch_placer",
+    "count": 1
+  }
+}
