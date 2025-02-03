@@ -27,7 +27,7 @@ public class torch_placer extends Item {
 
         BlockPos pos = user.getBlockPos();
 
-        if (world.getLightLevel(pos) <= 3) {
+        if (world.getLightLevel(pos) <= 0) {
 
             if (!world.setBlockState(pos, Blocks.TORCH.getDefaultState())){
                 return ActionResult.FAIL;
